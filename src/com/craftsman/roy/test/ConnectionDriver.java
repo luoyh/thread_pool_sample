@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Create a connection with JDK dynamic proxy.
- * @author Administrator
+ * @author luoyh
  *
  */
 public class ConnectionDriver {
