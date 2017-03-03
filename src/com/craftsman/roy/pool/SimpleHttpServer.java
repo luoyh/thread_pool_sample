@@ -75,7 +75,7 @@ public class SimpleHttpServer {
 					out.println("Server: nginx");
 					out.println("Content-Type: text/html; charset=UTF-8");
 					out.println("");
-					while ((line = br.readLine()) != null) {
+					while (null != (line = br.readLine())) {
 						out.println(line);
 					}
 				}
@@ -95,7 +95,7 @@ public class SimpleHttpServer {
 		private static void  close(Closeable ... closeables) {
 			if (null != closeables) {
 				for (Closeable closeable : closeables) {
-					if (closeable != null) {
+					if (null != closeable) {
 						try {
 							closeable.close();
 						} catch (IOException e) {
